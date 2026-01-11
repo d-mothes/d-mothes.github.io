@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — Dorian Mothes</title>
+  <meta name="description" content="Portfolio cybersécurité — compétences, homelab, certifications." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+<div class="scroll-progress" aria-hidden="true">
+  <div class="scroll-progress__bar" id="scrollbar"></div>
+</div>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#top" aria-label="Retour en haut">DM</a>
+      <nav class="nav">
+        <a href="#profil">Profil</a>
+        <a href="#competences">Compétences</a>
+        <a href="#homelab">Homelab</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="container">
+    <section class="hero">
+      <div class="hero-card">
+
+        <div class="hero-left">
+          <img class="photo-img" src="assets/bin/photo.png" alt="">
+        </div>
+
+        <div class="hero-right">
+          <h1>Dorian Mothes</h1>
+          <p class="kicker">Étudiant intéressé par la cybersécurité</p>
+          <p class="subtitle">
+            Portfolio présentant mes compétences, mes certifications et mes pratiques techniques en environnement contrôlé.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn" href="#contact">Me contacter</a>
+            <a class="btn ghost" href="assets/bin/cv.pdf" target="_blank" rel="noopener">Voir mon CV</a>
+          </div>
+
+          <div class="chips">
+            <span class="chip">Linux (Kali / Debian)</span>
+            <span class="chip">Réseaux</span>
+            <span class="chip">Pentest</span>
+            <span class="chip">Python</span>
+            <span class="chip">Homelab</span>
+            <span class="chip">OSINT</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="profil" class="section">
+      <div class="section-head">
+        <h2>Profil</h2>
+      </div>
+      <div class="card">
+        <p>
+          Intérêt marqué pour la cybersécurité, développé de manière autodidacte à travers des certifications, des labs personnels et des projets techniques.
+        </p>
+        <p>
+          Objectif : Faire mes études en informatique, puis poursuivre en Mastère cybersécurité.
+        </p>
+      </div>
+    </section>
+
+    <section id="competences" class="section">
+      <div class="section-head">
+        <h2>Compétences</h2>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Systèmes & réseaux</h3>
+          <ul>
+            <li>Système Linux (Kali Linux, Debian Server)</li>
+            <li>Fonctionnement des systèmes d'exploitation</li>
+            <li>Réseaux IP, protocoles courants, couches OSI, chiffrement</li>
+            <li>Dépannage réseau (diagnostic & identification)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Sécurité</h3>
+          <ul>
+            <li>Analyse de vulnérabilités sur environnements de test</li>
+            <li>Compréhension des vecteurs d’attaque</li>
+            <li>Notions de sécurisation des systèmes contre les attaques</li>
+            <li>OSINT : recherche et analyse d'information open sources</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Virtualisation & lab</h3>
+          <ul>
+            <li>Machines virtuelles de test (environnements isolés)</li>
+            <li>Serveur Debian + virtualisation (Proxmox)</li>
+            <li>Outils : Packet Tracer, Wireshark, Nmap, Metasploit</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Développement</h3>
+          <ul>
+            <li>Python (bases solides, scripts simples)</li>
+            <li>SQL (bases : requêtes simples)</li>
+            <li>C++ (bases : compréhension)</li>
+            <li>COBOL (en cours d'apprentissage)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="homelab" class="section">
+      <div class="section-head">
+        <h2>Homelab & pratiques</h2>
+      </div>
+
+      <div class="card">
+        <h3>Homelab personnel (environnement local et isolé)</h3>
+        <ul>
+          <li>Serveur sous Debian</li>
+          <li>Virtualisation Proxmox</li>
+          <li>Machines volontairement vulnérables : Metasploitable</li>
+          <li>Tests de vulnérabilités et compréhension des mécanismes d’attaque (cadre contrôlé)</li>
+        </ul>
+        <p class="note">
+          Objectif : comprendre le fonctionnement réel des systèmes, des réseaux et des enjeux de sécurité à travers la pratique.
+        </p>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Exemples de pratiques</h3>
+          <ul>
+            <li>Reconnaissance réseau et lecture des résultats</li>
+            <li>Analyse de trafic et validation d’hypothèses</li>
+            <li>Attaque et analyse du comportement sur machine isolée</li>
+            <li>Documentation courte et reproductible</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Éthique & cadre</h3>
+          <ul>
+            <li>Tests uniquement sur environnements personnels / autorisés</li>
+            <li>Mise en pratique via des CTF</li>
+            <li>Environnements isolés pour éviter tout impact</li>
+            <li>Objectif : apprentissage et compréhension</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="section">
+      <div class="section-head">
+        <h2>Certifications</h2>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Obtenues</h3>
+          <ul>
+            <li><a class="link" href="assets/bin/MOOC-ANSSI.pdf" target="_blank" rel="noopener"> MOOC ANSSI — SecNum Académie</a></li>
+            <li><a class="link" href="https://www.credly.com/badges/f7d62963-5a42-4c21-a62a-19f5d52711ef/public_url" target="_blank" rel="noopener">Cisco — Introduction to Cybersecurity</a></li>
+            <li><a class="link" href="https://www.credly.com/badges/bf500006-a106-4dae-b80f-2ce54f02f73e/public_url" target="_blank" rel="noopener">Cisco — Networking Basics</a></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>En cours</h3>
+          <ul>
+            <li><a class="link" href="https://cs50.harvard.edu/python" target="_blank" rel="noopener">Harvard / edX — CS50 Python</a></li>
+            <li><a class="link" href="https://netacad.com/fr/courses/endpoint-security?courseLang=fr-FR" target="_blank" rel="noopener">Cisco — Endpoint Security</a></li>
+            <li><a class="link" href="https://netacad.com/fr/courses/network-defense?courseLang=fr-FR" target="_blank" rel="noopener">Cisco — Network Defense</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section-head">
+        <h2>Contact</h2>
+      </div>
+
+      <div class="card contact">
+        <div class="contact-item">
+          <span class="label">Email</span>
+          <a href="mailto:d.mothes@protonmail.com">d.mothes@protonmail.com</a>
+        </div>
+        <div class="contact-item">
+          <span class="label">GitHub</span>
+          <a href="https://github.com/d-mothes" target="_blank" rel="noopener">github.com/d-mothes</a>
+        </div>
+        <div class="contact-item">
+          <span class="label">LinkedIn</span>
+          <a href="https://linkedin.com/in/dorian-mothes-58589a391" target="_blank" rel="noopener">Mothes Dorian</a>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>© <span id="y"></span> — Portfolio</p>
+      </footer>
+    </section>
+  </main>
+
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+
+  const bar = document.getElementById('scrollbar');
+  const onScroll = () => {
+    const doc = document.documentElement;
+    const scrollTop = doc.scrollTop || document.body.scrollTop;
+    const scrollHeight = doc.scrollHeight - doc.clientHeight;
+    const progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+    bar.style.width = progress.toFixed(2) + '%';
+  };
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  onScroll();
+</script>
+</body>
+</html>
