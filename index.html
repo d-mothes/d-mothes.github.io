@@ -22,6 +22,7 @@
         <a href="#competences">Compétences</a>
         <a href="#homelab">Homelab</a>
         <a href="#certifications">Certifications</a>
+        <a href="#Approche">Approche</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -48,12 +49,12 @@
           </div>
 
           <div class="chips">
-            <span class="chip">Linux (Kali / Debian)</span>
-            <span class="chip">Réseaux</span>
+            <span class="chip">Linux avancé</span>
+            <span class="chip">DFIR / SOC</span>
             <span class="chip">Pentest</span>
+            <span class="chip">OSINT</span>
             <span class="chip">Python</span>
             <span class="chip">Homelab</span>
-            <span class="chip">OSINT</span>
           </div>
         </div>
 
@@ -66,10 +67,13 @@
       </div>
       <div class="card">
         <p>
-          Intérêt marqué pour la cybersécurité, développé de manière autodidacte à travers des certifications, des labs personnels et des projets techniques.
+          Passionné de cybersécurité depuis l'enfance, j'ai construit mes compétences de manière autonome à travers des environnements de lab personnels, des certifications techniques et une pratique continue des outils offensifs et défensifs.
         </p>
         <p>
-          Objectif : grimper dans le monde de la cybersécurité pour me spécialiser DFIR dans le Cloud.
+          Mon approche : comprendre les mécanismes d'attaque pour mieux concevoir la défense. Cette logique guide aujourd'hui ma spécialisation vers le SOC et le DFIR cloud.
+        </p>
+        <p>
+          Objectif : intégrer un SOC en alternance, progresser vers l'analyse forensique et la réponse à incident, et me spécialiser dans la sécurité cloud — un domaine en forte croissance et en tension de recrutement.
         </p>
       </div>
     </section>
@@ -81,41 +85,62 @@
 
       <div class="grid">
         <div class="card">
-          <h3>Systèmes & réseaux</h3>
+          <h3>Systèmes & administration</h3>
           <ul>
-            <li>Système Linux (Kali Linux, Debian Server)</li>
-            <li>Fonctionnement des systèmes d'exploitation</li>
-            <li>Réseaux IP, protocoles courants, couches OSI, chiffrement</li>
-            <li>Dépannage réseau (diagnostic & identification)</li>
+            <li>Linux avancé : administration Debian, gestion des services, permissions, logs système</li>
+            <li>Deux serveurs physiques en production à domicile (Debian)</li>
+            <li>Virtualisation Proxmox : déploiement et gestion de VMs isolées</li>
+            <li>Windows (bases d'administration et de compréhension système)</li>
           </ul>
         </div>
 
         <div class="card">
-          <h3>Sécurité</h3>
+          <h3>Réseaux</h3>
           <ul>
-            <li>Analyse de vulnérabilités sur environnements de test</li>
-            <li>Compréhension des vecteurs d’attaque</li>
-            <li>Notions de sécurisation des systèmes contre les attaques</li>
-            <li>OSINT : recherche et analyse d'information open sources</li>
+            <li>Protocoles IP, modèles OSI/TCP-IP, chiffrement</li>
+            <li>Analyse de trafic réseau (Wireshark)</li>
+            <li>Configuration et simulation réseau complexe (Cisco Packet Tracer : VLAN, routage inter-VLAN, ACL)</li>
+            <li>Diagnostic et identification de comportements anormaux</li>
           </ul>
         </div>
 
         <div class="card">
-          <h3>Virtualisation & lab</h3>
+          <h3>Sécurité offensive (environnements contrôlés)</h3>
           <ul>
-            <li>Machines virtuelles de test (environnements isolés)</li>
-            <li>Serveur Debian + virtualisation (Proxmox)</li>
-            <li>Outils : Packet Tracer, Wireshark, Nmap, Metasploit</li>
+            <li>Reconnaissance et scan réseau (Nmap, outils custom Python)</li>
+            <li>Exploitation de vulnérabilités web : injections SQL (manuel + sqlmap), XSS</li>
+            <li>Tests d'intrusion sur machines volontairement vulnérables</li>
+            <li>Attaques sur authentification : Hydra, Hashcat, John the Ripper</li>
+            <li>Connaissance des vecteurs d'attaque et des techniques courantes (MITRE ATT&CK)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Sécurité défensive & analyse</h3>
+          <ul>
+            <li>Analyse de logs serveur et détection d'intrusion (en cours de spécialisation active)</li>
+            <li>Compréhension des indicateurs de compromission (IOC)</li>
+            <li>Notions d'analyse de comportement malveillant</li>
+            <li>Sécurisation et durcissement de systèmes Linux</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>OSINT</h3>
+          <ul>
+            <li>Recherche manuelle avancée : Shodan, WHOIS, moteurs spécialisés</li>
+            <li>Outils : Maltego, outils custom développés en Python</li>
+            <li>Collecte, croisement et analyse d'informations open source</li>
+            <li>Scripts d'automatisation de reconnaissance</li>
           </ul>
         </div>
 
         <div class="card">
           <h3>Développement</h3>
           <ul>
-            <li>Python (bases solides, scripts simples)</li>
-            <li>SQL (bases : requêtes simples)</li>
-            <li>C++ (bases : compréhension)</li>
-            <li>COBOL (en cours d'apprentissage)</li>
+            <li>Python : scripting, automatisation de tâches de sécurité, développement d'outils perso</li>
+            <li>SQL : requêtes, compréhension des injections et contre-mesures</li>
+            <li>C++ : lecture et compréhension de code</li>
           </ul>
         </div>
       </div>
@@ -129,13 +154,11 @@
       <div class="card">
         <h3>Homelab personnel (environnement local et isolé)</h3>
         <ul>
-          <li>Serveur sous Debian</li>
-          <li>Virtualisation Proxmox</li>
-          <li>Machines volontairement vulnérables : Metasploitable</li>
-          <li>Tests de vulnérabilités et compréhension des mécanismes d’attaque (cadre contrôlé)</li>
+          <li>Infrastructure personnelle composée de deux serveurs physiques sous Debian et d'un environnement de virtualisation Proxmox.</li>
+          <li>Utilisation : déploiement de machines vulnérables (Metasploitable), tests d'exploitation en environnement totalement isolé, analyse de logs, simulation de scénarios d'attaque/défense.</li>
         </ul>
         <p class="note">
-          Objectif : comprendre le fonctionnement réel des systèmes, des réseaux et des enjeux de sécurité à travers la pratique.
+          Focus actuel : détection d'intrusion, corrélation d'événements et analyse comportementale à partir des logs système.
         </p>
       </div>
 
@@ -162,9 +185,25 @@
       </div>
     </section>
 
+    <section id="Approche" class="section">
+      <div class="section-head">
+        <h2>Approche</h2>
+      </div>
+
+      <div>
+        <div class="card">
+          <ul>
+            <li>Ma pratique de la cybersécurité est fondée sur une logique simple : pour défendre efficacement un système, il faut comprendre comment l'attaquer.</li>
+            <li>J'ai construit mes compétences techniques en explorant les deux faces de la sécurité — les mécanismes offensifs d'abord, pour en maîtriser les logiques, puis les contre-mesures défensives qui en découlent naturellement.</li>
+            <li>Cette approche guide aujourd'hui ma spécialisation vers le DFIR et la sécurité cloud : des domaines où la compréhension des attaques est un prérequis, pas une option.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <section id="certifications" class="section">
       <div class="section-head">
-        <h2>Certifications</h2>
+        <h2>certifications</h2>
       </div>
 
       <div class="grid">
@@ -208,7 +247,6 @@
           <a href="https://linkedin.com/in/dorian-mothes-58589a391" target="_blank" rel="noopener">Mothes Dorian</a>
         </div>
       </div>
-
       <footer class="footer">
         <p>© <span id="y"></span> — Portfolio Mothes Dorian</p>
       </footer>
