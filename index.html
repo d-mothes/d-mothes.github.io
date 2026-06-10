@@ -14,245 +14,224 @@
 <div class="scroll-progress" aria-hidden="true">
   <div class="scroll-progress__bar" id="scrollbar"></div>
 </div>
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <a class="brand" href="#top" aria-label="Retour en haut">DM</a>
-      <nav class="nav">
-        <a href="#profil">Profil</a>
-        <a href="#competences">Compétences</a>
-        <a href="#homelab">Homelab</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#Approche">Approche</a>
-        <a href="#contact">Contact</a>
-      </nav>
+
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="#top" aria-label="Retour en haut">DM</a>
+    <nav class="nav">
+      <a href="#profil"      data-i18n="nav_profil">Profil</a>
+      <a href="#competences" data-i18n="nav_competences">Compétences</a>
+      <a href="#homelab"     data-i18n="nav_homelab">Homelab</a>
+      <a href="#certifications" data-i18n="nav_certifications">Certifications</a>
+      <a href="#Approche"    data-i18n="nav_approche">Approche</a>
+      <a href="#contact"     data-i18n="nav_contact">Contact</a>
+      <button id="lang-toggle" class="lang-btn" aria-label="Switch language" title="Switch to English">
+        <svg id="flag-svg" width="24" height="16" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" style="display:block;border-radius:3px;overflow:hidden">
+          <!-- GB flag default -->
+          <rect width="60" height="40" fill="#012169"/>
+          <path d="M0,0 L60,40 M60,0 L0,40" stroke="#fff" stroke-width="8"/>
+          <path d="M0,0 L60,40 M60,0 L0,40" stroke="#C8102E" stroke-width="5"/>
+          <path d="M30,0 V40 M0,20 H60" stroke="#fff" stroke-width="13"/>
+          <path d="M30,0 V40 M0,20 H60" stroke="#C8102E" stroke-width="8"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main id="top" class="container">
+
+  <section class="hero">
+    <div class="hero-card">
+      <div class="hero-left">
+        <img class="photo-img" src="assets/bin/photo.png" alt="">
+      </div>
+      <div class="hero-right">
+        <h1>Dorian Mothes</h1>
+        <p class="kicker" data-i18n="hero_kicker">Étudiant en cybersécurité</p>
+        <p class="subtitle" data-i18n="hero_subtitle">
+          Portfolio présentant mes compétences, mes certifications et mes pratiques techniques en environnement contrôlé.
+        </p>
+        <div class="cta-row">
+          <a class="btn" href="#contact" data-i18n="hero_cta_contact">Me contacter</a>
+          <a class="btn ghost" href="assets/bin/cv.pdf" target="_blank" rel="noopener" data-i18n="hero_cta_cv">Voir mon CV</a>
+        </div>
+        <div class="chips">
+          <span class="chip">Linux avancé</span>
+          <span class="chip">DFIR / SOC</span>
+          <span class="chip">Pentest</span>
+          <span class="chip">OSINT</span>
+          <span class="chip">Python</span>
+          <span class="chip">Homelab</span>
+        </div>
+      </div>
     </div>
-  </header>
+  </section>
 
-  <main id="top" class="container">
-    <section class="hero">
-      <div class="hero-card">
+  <section id="profil" class="section">
+    <div class="section-head"><h2 data-i18n="nav_profil">Profil</h2></div>
+    <div class="card">
+      <p data-i18n="profil_p1">Passionné de cybersécurité depuis l'enfance, j'ai construit mes compétences de manière autonome à travers des environnements de lab personnels, des certifications techniques et une pratique continue des outils offensifs et défensifs.</p>
+      <p data-i18n="profil_p2">Mon approche : comprendre les mécanismes d'attaque pour mieux concevoir la défense. Cette logique guide aujourd'hui ma spécialisation vers le SOC et le DFIR cloud.</p>
+      <p data-i18n="profil_p3">Objectif : intégrer un SOC en alternance, progresser vers l'analyse forensique et la réponse à incident, et me spécialiser dans la sécurité cloud — un domaine en forte croissance et en tension de recrutement.</p>
+    </div>
+  </section>
 
-        <div class="hero-left">
-          <img class="photo-img" src="assets/bin/photo.png" alt="">
-        </div>
-
-        <div class="hero-right">
-          <h1>Dorian Mothes</h1>
-          <p class="kicker">Étudiant en cybersécurité</p>
-          <p class="subtitle">
-            Portfolio présentant mes compétences, mes certifications et mes pratiques techniques en environnement contrôlé.
-          </p>
-
-          <div class="cta-row">
-            <a class="btn" href="#contact">Me contacter</a>
-            <a class="btn ghost" href="assets/bin/cv.pdf" target="_blank" rel="noopener">Voir mon CV</a>
-          </div>
-
-          <div class="chips">
-            <span class="chip">Linux avancé</span>
-            <span class="chip">DFIR / SOC</span>
-            <span class="chip">Pentest</span>
-            <span class="chip">OSINT</span>
-            <span class="chip">Python</span>
-            <span class="chip">Homelab</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="profil" class="section">
-      <div class="section-head">
-        <h2>Profil</h2>
-      </div>
-      <div class="card">
-        <p>
-          Passionné de cybersécurité depuis l'enfance, j'ai construit mes compétences de manière autonome à travers des environnements de lab personnels, des certifications techniques et une pratique continue des outils offensifs et défensifs.
-        </p>
-        <p>
-          Mon approche : comprendre les mécanismes d'attaque pour mieux concevoir la défense. Cette logique guide aujourd'hui ma spécialisation vers le SOC et le DFIR cloud.
-        </p>
-        <p>
-          Objectif : intégrer un SOC en alternance, progresser vers l'analyse forensique et la réponse à incident, et me spécialiser dans la sécurité cloud — un domaine en forte croissance et en tension de recrutement.
-        </p>
-      </div>
-    </section>
-
-    <section id="competences" class="section">
-      <div class="section-head">
-        <h2>Compétences</h2>
-      </div>
-
-      <div class="grid">
-        <div class="card">
-          <h3>Systèmes & administration</h3>
-          <ul>
-            <li>Linux avancé : administration Debian, gestion des services, permissions, logs système</li>
-            <li>Deux serveurs physiques en production à domicile (Debian)</li>
-            <li>Virtualisation Proxmox : déploiement et gestion de VMs isolées</li>
-            <li>Windows (bases d'administration et de compréhension système)</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>Réseaux</h3>
-          <ul>
-            <li>Protocoles IP, modèles OSI/TCP-IP, chiffrement</li>
-            <li>Analyse de trafic réseau (Wireshark)</li>
-            <li>Configuration et simulation réseau complexe (Cisco Packet Tracer : VLAN, routage inter-VLAN, ACL)</li>
-            <li>Diagnostic et identification de comportements anormaux</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>Sécurité offensive (environnements contrôlés)</h3>
-          <ul>
-            <li>Reconnaissance et scan réseau (Nmap, outils custom Python)</li>
-            <li>Exploitation de vulnérabilités web : injections SQL (manuel + sqlmap), XSS</li>
-            <li>Tests d'intrusion sur machines volontairement vulnérables</li>
-            <li>Attaques sur authentification : Hydra, Hashcat, John the Ripper</li>
-            <li>Connaissance des vecteurs d'attaque et des techniques courantes (MITRE ATT&CK)</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>Sécurité défensive & analyse</h3>
-          <ul>
-            <li>Analyse de logs serveur et détection d'intrusion (en cours de spécialisation active)</li>
-            <li>Compréhension des indicateurs de compromission (IOC)</li>
-            <li>Notions d'analyse de comportement malveillant</li>
-            <li>Sécurisation et durcissement de systèmes Linux</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>OSINT</h3>
-          <ul>
-            <li>Recherche manuelle avancée : Shodan, WHOIS, moteurs spécialisés</li>
-            <li>Outils : Maltego, outils custom développés en Python</li>
-            <li>Collecte, croisement et analyse d'informations open source</li>
-            <li>Scripts d'automatisation de reconnaissance</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>Développement</h3>
-          <ul>
-            <li>Python : scripting, automatisation de tâches de sécurité, développement d'outils perso</li>
-            <li>SQL : requêtes, compréhension des injections et contre-mesures</li>
-            <li>C++ : lecture et compréhension de code</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="homelab" class="section">
-      <div class="section-head">
-        <h2>Homelab & pratiques</h2>
-      </div>
+  <section id="competences" class="section">
+    <div class="section-head"><h2 data-i18n="nav_competences">Compétences</h2></div>
+    <div class="grid">
 
       <div class="card">
-        <h3>Homelab personnel (environnement local et isolé)</h3>
+        <h3 data-i18n="comp_sys_title">Systèmes & administration</h3>
         <ul>
-          <li>Infrastructure personnelle composée de deux serveurs physiques sous Debian et d'un environnement de virtualisation Proxmox.</li>
-          <li>Utilisation : déploiement de machines vulnérables (Metasploitable), tests d'exploitation en environnement totalement isolé, analyse de logs, simulation de scénarios d'attaque/défense.</li>
+          <li data-i18n="comp_sys_1">Linux avancé : administration Debian, gestion des services, permissions, logs système</li>
+          <li data-i18n="comp_sys_2">Deux serveurs physiques en production à domicile (Debian)</li>
+          <li data-i18n="comp_sys_3">Virtualisation Proxmox : déploiement et gestion de VMs isolées</li>
+          <li data-i18n="comp_sys_4">Windows (bases d'administration et de compréhension système)</li>
         </ul>
-        <p class="note">
-          Focus actuel : détection d'intrusion, corrélation d'événements et analyse comportementale à partir des logs système.
-        </p>
       </div>
 
-      <div class="grid">
-        <div class="card">
-          <h3>Exemples de pratiques</h3>
-          <ul>
-            <li>Reconnaissance réseau et lecture des résultats</li>
-            <li>Analyse de trafic et validation d’hypothèses</li>
-            <li>Attaque et analyse du comportement sur machine isolée</li>
-            <li>Documentation courte et reproductible</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>Éthique & cadre</h3>
-          <ul>
-            <li>Tests uniquement sur environnements personnels / autorisés</li>
-            <li>Mise en pratique via des CTF</li>
-            <li>Environnements isolés pour éviter tout impact</li>
-            <li>Objectif : apprentissage et compréhension</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="Approche" class="section">
-      <div class="section-head">
-        <h2>Approche</h2>
+      <div class="card">
+        <h3 data-i18n="comp_net_title">Réseaux</h3>
+        <ul>
+          <li data-i18n="comp_net_1">Protocoles IP, modèles OSI/TCP-IP, chiffrement</li>
+          <li data-i18n="comp_net_2">Analyse de trafic réseau (Wireshark)</li>
+          <li data-i18n="comp_net_3">Configuration et simulation réseau complexe (Cisco Packet Tracer : VLAN, routage inter-VLAN, ACL)</li>
+          <li data-i18n="comp_net_4">Diagnostic et identification de comportements anormaux</li>
+        </ul>
       </div>
 
-      <div>
-        <div class="card">
-          <ul>
-            <li>Ma pratique de la cybersécurité est fondée sur une logique simple : pour défendre efficacement un système, il faut comprendre comment l'attaquer.</li>
-            <li>J'ai construit mes compétences techniques en explorant les deux faces de la sécurité — les mécanismes offensifs d'abord, pour en maîtriser les logiques, puis les contre-mesures défensives qui en découlent naturellement.</li>
-            <li>Cette approche guide aujourd'hui ma spécialisation vers le DFIR et la sécurité cloud : des domaines où la compréhension des attaques est un prérequis, pas une option.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="certifications" class="section">
-      <div class="section-head">
-        <h2>certifications</h2>
+      <div class="card">
+        <h3 data-i18n="comp_off_title">Sécurité offensive (environnements contrôlés)</h3>
+        <ul>
+          <li data-i18n="comp_off_1">Reconnaissance et scan réseau (Nmap, outils custom Python)</li>
+          <li data-i18n="comp_off_2">Exploitation de vulnérabilités web : injections SQL (manuel + sqlmap), XSS</li>
+          <li data-i18n="comp_off_3">Tests d'intrusion sur machines volontairement vulnérables</li>
+          <li data-i18n="comp_off_4">Attaques sur authentification : Hydra, Hashcat, John the Ripper</li>
+          <li data-i18n="comp_off_5">Connaissance des vecteurs d'attaque et des techniques courantes (MITRE ATT&CK)</li>
+        </ul>
       </div>
 
-      <div class="grid">
-        <div class="card">
-          <h3>Obtenues</h3>
-          <ul>
-            <li><a class="link" href="assets/bin/MOOC-ANSSI.pdf" target="_blank" rel="noopener"> MOOC ANSSI — SecNum Académie</a></li>
-            <li><a class="link" href="https://www.credly.com/badges/f7d62963-5a42-4c21-a62a-19f5d52711ef/public_url" target="_blank" rel="noopener">Cisco — Introduction to Cybersecurity</a></li>
-            <li><a class="link" href="https://www.credly.com/badges/bf500006-a106-4dae-b80f-2ce54f02f73e/public_url" target="_blank" rel="noopener">Cisco — Networking Basics</a></li>
-            <li><a class="link" href="https://www.credly.com/badges/0804e079-4a4c-4409-be60-020352b37b5c/public_url" target="_blank" rel="noopener">Cisco — Linux Unchatched</a></li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>En cours</h3>
-          <ul>
-            <li><a class="link" href="https://cs50.harvard.edu/python" target="_blank" rel="noopener">Harvard / edX — CS50 Python</a></li>
-            <li><a class="link" href="https://netacad.com/fr/courses/endpoint-security?courseLang=fr-FR" target="_blank" rel="noopener">Cisco — Endpoint Security</a></li>
-            <li><a class="link" href="https://netacad.com/fr/courses/network-defense?courseLang=fr-FR" target="_blank" rel="noopener">Cisco — Network Defense</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="section-head">
-        <h2>Contact</h2>
+      <div class="card">
+        <h3 data-i18n="comp_def_title">Sécurité défensive & analyse</h3>
+        <ul>
+          <li data-i18n="comp_def_1">Analyse de logs serveur et détection d'intrusion (en cours de spécialisation active)</li>
+          <li data-i18n="comp_def_2">Compréhension des indicateurs de compromission (IOC)</li>
+          <li data-i18n="comp_def_3">Notions d'analyse de comportement malveillant</li>
+          <li data-i18n="comp_def_4">Sécurisation et durcissement de systèmes Linux</li>
+        </ul>
       </div>
 
-      <div class="card contact">
-        <div class="contact-item">
-          <span class="label">Email</span>
-          <a href="mailto:d.mothes@protonmail.com">d.mothes@protonmail.com</a>
-        </div>
-        <div class="contact-item">
-          <span class="label">GitHub</span>
-          <a href="https://github.com/d-mothes" target="_blank" rel="noopener">github.com/d-mothes</a>
-        </div>
-        <div class="contact-item">
-          <span class="label">LinkedIn</span>
-          <a href="https://linkedin.com/in/dorian-mothes-58589a391" target="_blank" rel="noopener">Mothes Dorian</a>
-        </div>
+      <div class="card">
+        <h3 data-i18n="comp_osint_title">OSINT</h3>
+        <ul>
+          <li data-i18n="comp_osint_1">Recherche manuelle avancée : Shodan, WHOIS, moteurs spécialisés</li>
+          <li data-i18n="comp_osint_2">Outils : Maltego, outils custom développés en Python</li>
+          <li data-i18n="comp_osint_3">Collecte, croisement et analyse d'informations open source</li>
+          <li data-i18n="comp_osint_4">Scripts d'automatisation de reconnaissance</li>
+        </ul>
       </div>
-      <footer class="footer">
-        <p>© <span id="y"></span> — Portfolio Mothes Dorian</p>
-      </footer>
-    </section>
-  </main>
 
+      <div class="card">
+        <h3 data-i18n="comp_dev_title">Développement</h3>
+        <ul>
+          <li data-i18n="comp_dev_1">Python : scripting, automatisation de tâches de sécurité, développement d'outils perso</li>
+          <li data-i18n="comp_dev_2">SQL : requêtes, compréhension des injections et contre-mesures</li>
+          <li data-i18n="comp_dev_3">C++ : lecture et compréhension de code</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="homelab" class="section">
+    <div class="section-head"><h2 data-i18n="nav_homelab">Homelab & pratiques</h2></div>
+    <div class="card">
+      <h3 data-i18n="homelab_h3">Homelab personnel (environnement local et isolé)</h3>
+      <ul>
+        <li data-i18n="homelab_li1">Infrastructure personnelle composée de deux serveurs physiques sous Debian et d'un environnement de virtualisation Proxmox.</li>
+        <li data-i18n="homelab_li2">Utilisation : déploiement de machines vulnérables (Metasploitable), tests d'exploitation en environnement totalement isolé, analyse de logs, simulation de scénarios d'attaque/défense.</li>
+      </ul>
+      <p class="note" data-i18n="homelab_note">Focus actuel : détection d'intrusion, corrélation d'événements et analyse comportementale à partir des logs système.</p>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <h3 data-i18n="homelab_practices_title">Exemples de pratiques</h3>
+        <ul>
+          <li data-i18n="homelab_p1">Reconnaissance réseau et lecture des résultats</li>
+          <li data-i18n="homelab_p2">Analyse de trafic et validation d'hypothèses</li>
+          <li data-i18n="homelab_p3">Attaque et analyse du comportement sur machine isolée</li>
+          <li data-i18n="homelab_p4">Documentation courte et reproductible</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 data-i18n="homelab_ethics_title">Éthique & cadre</h3>
+        <ul>
+          <li data-i18n="homelab_e1">Tests uniquement sur environnements personnels / autorisés</li>
+          <li data-i18n="homelab_e2">Mise en pratique via des CTF</li>
+          <li data-i18n="homelab_e3">Environnements isolés pour éviter tout impact</li>
+          <li data-i18n="homelab_e4">Objectif : apprentissage et compréhension</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="Approche" class="section">
+    <div class="section-head"><h2 data-i18n="nav_approche">Approche</h2></div>
+    <div class="card">
+      <ul>
+        <li data-i18n="approche_1">Ma pratique de la cybersécurité est fondée sur une logique simple : pour défendre efficacement un système, il faut comprendre comment l'attaquer.</li>
+        <li data-i18n="approche_2">J'ai construit mes compétences techniques en explorant les deux faces de la sécurité — les mécanismes offensifs d'abord, pour en maîtriser les logiques, puis les contre-mesures défensives qui en découlent naturellement.</li>
+        <li data-i18n="approche_3">Cette approche guide aujourd'hui ma spécialisation vers le DFIR et la sécurité cloud : des domaines où la compréhension des attaques est un prérequis, pas une option.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="certifications" class="section">
+    <div class="section-head"><h2 data-i18n="nav_certifications">Certifications</h2></div>
+    <div class="grid">
+      <div class="card">
+        <h3 data-i18n="cert_obtained">Obtenues</h3>
+        <ul>
+          <li><a class="link" href="assets/bin/MOOC-ANSSI.pdf" target="_blank" rel="noopener">MOOC ANSSI — SecNum Académie</a></li>
+          <li><a class="link" href="https://www.credly.com/badges/f7d62963-5a42-4c21-a62a-19f5d52711ef/public_url" target="_blank" rel="noopener">Cisco — Introduction to Cybersecurity</a></li>
+          <li><a class="link" href="https://www.credly.com/badges/bf500006-a106-4dae-b80f-2ce54f02f73e/public_url" target="_blank" rel="noopener">Cisco — Networking Basics</a></li>
+          <li><a class="link" href="https://www.credly.com/badges/0804e079-4a4c-4409-be60-020352b37b5c/public_url" target="_blank" rel="noopener">Cisco — Linux Unhatched</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 data-i18n="cert_inprogress">En cours</h3>
+        <ul>
+          <li><a class="link" href="https://cs50.harvard.edu/python" target="_blank" rel="noopener">Harvard / edX — CS50 Python</a></li>
+          <li><a class="link" href="https://netacad.com/fr/courses/endpoint-security?courseLang=fr-FR" target="_blank" rel="noopener">Cisco — Endpoint Security</a></li>
+          <li><a class="link" href="https://netacad.com/fr/courses/network-defense?courseLang=fr-FR" target="_blank" rel="noopener">Cisco — Network Defense</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="section-head"><h2 data-i18n="nav_contact">Contact</h2></div>
+    <div class="card contact">
+      <div class="contact-item">
+        <span class="label">Email</span>
+        <a href="mailto:d.mothes@protonmail.com">d.mothes@protonmail.com</a>
+      </div>
+      <div class="contact-item">
+        <span class="label">GitHub</span>
+        <a href="https://github.com/d-mothes" target="_blank" rel="noopener">github.com/d-mothes</a>
+      </div>
+      <div class="contact-item">
+        <span class="label">LinkedIn</span>
+        <a href="https://linkedin.com/in/dorian-mothes-58589a391" target="_blank" rel="noopener">Mothes Dorian</a>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>© <span id="y"></span> — Portfolio Mothes Dorian</p>
+    </footer>
+  </section>
+
+</main>
 
 <script>
   document.getElementById('y').textContent = new Date().getFullYear();
@@ -265,10 +244,179 @@
     const progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
     bar.style.width = progress.toFixed(2) + '%';
   };
-
   window.addEventListener('scroll', onScroll, { passive: true });
   window.addEventListener('resize', onScroll);
   onScroll();
+
+  const translations = {
+    fr: {
+      nav_profil: "Profil",
+      nav_competences: "Compétences",
+      nav_homelab: "Homelab",
+      nav_certifications: "Certifications",
+      nav_approche: "Approche",
+      nav_contact: "Contact",
+      hero_kicker: "Étudiant en cybersécurité",
+      hero_subtitle: "Portfolio présentant mes compétences, mes certifications et mes pratiques techniques en environnement contrôlé.",
+      hero_cta_contact: "Me contacter",
+      hero_cta_cv: "Voir mon CV",
+      profil_p1: "Passionné de cybersécurité depuis l'enfance, j'ai construit mes compétences de manière autonome à travers des environnements de lab personnels, des certifications techniques et une pratique continue des outils offensifs et défensifs.",
+      profil_p2: "Mon approche : comprendre les mécanismes d'attaque pour mieux concevoir la défense. Cette logique guide aujourd'hui ma spécialisation vers le SOC et le DFIR cloud.",
+      profil_p3: "Objectif : intégrer un SOC en alternance, progresser vers l'analyse forensique et la réponse à incident, et me spécialiser dans la sécurité cloud — un domaine en forte croissance et en tension de recrutement.",
+      comp_sys_title: "Systèmes & administration",
+      comp_sys_1: "Linux avancé : administration Debian, gestion des services, permissions, logs système",
+      comp_sys_2: "Deux serveurs physiques en production à domicile (Debian)",
+      comp_sys_3: "Virtualisation Proxmox : déploiement et gestion de VMs isolées",
+      comp_sys_4: "Windows (bases d'administration et de compréhension système)",
+      comp_net_title: "Réseaux",
+      comp_net_1: "Protocoles IP, modèles OSI/TCP-IP, chiffrement",
+      comp_net_2: "Analyse de trafic réseau (Wireshark)",
+      comp_net_3: "Configuration et simulation réseau complexe (Cisco Packet Tracer : VLAN, routage inter-VLAN, ACL)",
+      comp_net_4: "Diagnostic et identification de comportements anormaux",
+      comp_off_title: "Sécurité offensive (environnements contrôlés)",
+      comp_off_1: "Reconnaissance et scan réseau (Nmap, outils custom Python)",
+      comp_off_2: "Exploitation de vulnérabilités web : injections SQL (manuel + sqlmap), XSS",
+      comp_off_3: "Tests d'intrusion sur machines volontairement vulnérables",
+      comp_off_4: "Attaques sur authentification : Hydra, Hashcat, John the Ripper",
+      comp_off_5: "Connaissance des vecteurs d'attaque et des techniques courantes (MITRE ATT&CK)",
+      comp_def_title: "Sécurité défensive & analyse",
+      comp_def_1: "Analyse de logs serveur et détection d'intrusion (en cours de spécialisation active)",
+      comp_def_2: "Compréhension des indicateurs de compromission (IOC)",
+      comp_def_3: "Notions d'analyse de comportement malveillant",
+      comp_def_4: "Sécurisation et durcissement de systèmes Linux",
+      comp_osint_title: "OSINT",
+      comp_osint_1: "Recherche manuelle avancée : Shodan, WHOIS, moteurs spécialisés",
+      comp_osint_2: "Outils : Maltego, outils custom développés en Python",
+      comp_osint_3: "Collecte, croisement et analyse d'informations open source",
+      comp_osint_4: "Scripts d'automatisation de reconnaissance",
+      comp_dev_title: "Développement",
+      comp_dev_1: "Python : scripting, automatisation de tâches de sécurité, développement d'outils perso",
+      comp_dev_2: "SQL : requêtes, compréhension des injections et contre-mesures",
+      comp_dev_3: "C++ : lecture et compréhension de code",
+      homelab_h3: "Homelab personnel (environnement local et isolé)",
+      homelab_li1: "Infrastructure personnelle composée de deux serveurs physiques sous Debian et d'un environnement de virtualisation Proxmox.",
+      homelab_li2: "Utilisation : déploiement de machines vulnérables (Metasploitable), tests d'exploitation en environnement totalement isolé, analyse de logs, simulation de scénarios d'attaque/défense.",
+      homelab_note: "Focus actuel : détection d'intrusion, corrélation d'événements et analyse comportementale à partir des logs système.",
+      homelab_practices_title: "Exemples de pratiques",
+      homelab_p1: "Reconnaissance réseau et lecture des résultats",
+      homelab_p2: "Analyse de trafic et validation d'hypothèses",
+      homelab_p3: "Attaque et analyse du comportement sur machine isolée",
+      homelab_p4: "Documentation courte et reproductible",
+      homelab_ethics_title: "Éthique & cadre",
+      homelab_e1: "Tests uniquement sur environnements personnels / autorisés",
+      homelab_e2: "Mise en pratique via des CTF",
+      homelab_e3: "Environnements isolés pour éviter tout impact",
+      homelab_e4: "Objectif : apprentissage et compréhension",
+      approche_1: "Ma pratique de la cybersécurité est fondée sur une logique simple : pour défendre efficacement un système, il faut comprendre comment l'attaquer.",
+      approche_2: "J'ai construit mes compétences techniques en explorant les deux faces de la sécurité — les mécanismes offensifs d'abord, pour en maîtriser les logiques, puis les contre-mesures défensives qui en découlent naturellement.",
+      approche_3: "Cette approche guide aujourd'hui ma spécialisation vers le DFIR et la sécurité cloud : des domaines où la compréhension des attaques est un prérequis, pas une option.",
+      cert_obtained: "Obtenues",
+      cert_inprogress: "En cours",
+    },
+    en: {
+      nav_profil: "Profile",
+      nav_competences: "Skills",
+      nav_homelab: "Homelab",
+      nav_certifications: "Certifications",
+      nav_approche: "Approach",
+      nav_contact: "Contact",
+      hero_kicker: "Cybersecurity student",
+      hero_subtitle: "Portfolio showcasing my technical skills, certifications and hands-on practice in controlled environments.",
+      hero_cta_contact: "Contact me",
+      hero_cta_cv: "View my CV",
+      profil_p1: "Passionate about cybersecurity since childhood, I built my skills independently through personal lab environments, technical certifications, and continuous hands-on practice with both offensive and defensive tools.",
+      profil_p2: "My approach: understanding attack mechanisms to build better defences. This drives my current focus on SOC operations and cloud DFIR.",
+      profil_p3: "Goal: join a SOC through a work-study programme, advance towards forensic analysis and incident response, and specialise in cloud security — a high-growth, high-demand niche.",
+      comp_sys_title: "Systems & administration",
+      comp_sys_1: "Advanced Linux: Debian administration, service management, permissions, system logs",
+      comp_sys_2: "Two physical servers running in production at home (Debian)",
+      comp_sys_3: "Proxmox virtualisation: deployment and management of isolated VMs",
+      comp_sys_4: "Windows (foundational administration and system understanding)",
+      comp_net_title: "Networking",
+      comp_net_1: "IP protocols, OSI/TCP-IP models, encryption",
+      comp_net_2: "Network traffic analysis (Wireshark)",
+      comp_net_3: "Complex network simulation (Cisco Packet Tracer: VLANs, inter-VLAN routing, ACLs)",
+      comp_net_4: "Diagnostic and detection of abnormal network behaviour",
+      comp_off_title: "Offensive security (controlled environments)",
+      comp_off_1: "Network reconnaissance and scanning (Nmap, custom Python tools)",
+      comp_off_2: "Web vulnerability exploitation: SQL injection (manual + sqlmap), XSS",
+      comp_off_3: "Penetration testing on intentionally vulnerable machines",
+      comp_off_4: "Authentication attacks: Hydra, Hashcat, John the Ripper",
+      comp_off_5: "Knowledge of attack vectors and common techniques (MITRE ATT&CK)",
+      comp_def_title: "Defensive security & analysis",
+      comp_def_1: "Server log analysis and intrusion detection (actively specialising)",
+      comp_def_2: "Understanding of indicators of compromise (IOC)",
+      comp_def_3: "Malicious behaviour analysis fundamentals",
+      comp_def_4: "Linux system hardening and securing",
+      comp_osint_title: "OSINT",
+      comp_osint_1: "Advanced manual research: Shodan, WHOIS, specialised search engines",
+      comp_osint_2: "Tools: Maltego, custom tools built in Python",
+      comp_osint_3: "Open-source information collection, cross-referencing and analysis",
+      comp_osint_4: "Reconnaissance automation scripts",
+      comp_dev_title: "Development",
+      comp_dev_1: "Python: scripting, security task automation, custom tool development",
+      comp_dev_2: "SQL: queries, understanding injections and countermeasures",
+      comp_dev_3: "C++: reading and understanding code",
+      homelab_h3: "Personal homelab (local, isolated environment)",
+      homelab_li1: "Personal infrastructure consisting of two physical Debian servers and a Proxmox virtualisation environment.",
+      homelab_li2: "Usage: deploying vulnerable machines (Metasploitable), exploitation testing in fully isolated environments, log analysis, attack/defence scenario simulation.",
+      homelab_note: "Current focus: intrusion detection, event correlation and behavioural analysis from system logs.",
+      homelab_practices_title: "Practice examples",
+      homelab_p1: "Network reconnaissance and result analysis",
+      homelab_p2: "Traffic analysis and hypothesis validation",
+      homelab_p3: "Attack and behaviour analysis on isolated machines",
+      homelab_p4: "Short, reproducible documentation",
+      homelab_ethics_title: "Ethics & framework",
+      homelab_e1: "Tests conducted exclusively on personal or authorised environments",
+      homelab_e2: "Hands-on practice through CTFs",
+      homelab_e3: "Isolated environments to prevent any external impact",
+      homelab_e4: "Goal: learning and understanding",
+      approche_1: "My approach to cybersecurity is built on a simple principle: to effectively defend a system, you must first understand how to attack it.",
+      approche_2: "I built my technical skills by exploring both sides of security — offensive mechanisms first, to master their logic, then the defensive countermeasures that naturally follow.",
+      approche_3: "This approach now drives my specialisation in DFIR and cloud security: fields where an attacker's mindset is a prerequisite, not an optional extra.",
+      cert_obtained: "Obtained",
+      cert_inprogress: "In progress",
+    }
+  };
+
+  let currentLang = localStorage.getItem('lang') || 'fr';
+
+  function applyLang(lang) {
+    const t = translations[lang];
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (t[key] !== undefined) el.textContent = t[key];
+    });
+    document.documentElement.lang = lang;
+    const btn = document.getElementById('lang-toggle');
+    const flagSvg = document.getElementById('flag-svg');
+    if (lang === 'fr') {
+      btn.title = 'Switch to English';
+      flagSvg.innerHTML = `
+      <rect width="60" height="40" fill="#012169"/>
+      <path d="M0,0 L60,40 M60,0 L0,40" stroke="#fff" stroke-width="8"/>
+      <path d="M0,0 L60,40 M60,0 L0,40" stroke="#C8102E" stroke-width="5"/>
+      <path d="M30,0 V40 M0,20 H60" stroke="#fff" stroke-width="13"/>
+      <path d="M30,0 V40 M0,20 H60" stroke="#C8102E" stroke-width="8"/>
+    `;
+    } else {
+      btn.title = 'Passer en français';
+      flagSvg.innerHTML = `
+      <rect width="20" height="40" fill="#002395"/>
+      <rect x="20" width="20" height="40" fill="#fff"/>
+      <rect x="40" width="20" height="40" fill="#ED2939"/>
+    `;
+    }
+  }
+
+  document.getElementById('lang-toggle').addEventListener('click', () => {
+    currentLang = currentLang === 'fr' ? 'en' : 'fr';
+    localStorage.setItem('lang', currentLang);
+    applyLang(currentLang);
+  });
+
+  applyLang(currentLang);
+  window.scrollTo(0, 0);
 </script>
 </body>
 </html>
